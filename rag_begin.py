@@ -5,10 +5,6 @@ from typing import List, Tuple, Optional
 import numpy as np
 import pandas as pd
 
-from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
-from sklearn.metrics.pairwise import cosine_similarity
-
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
@@ -16,6 +12,12 @@ import plotly.graph_objects as go
 
 from datapizza.agents import Agent
 from datapizza.clients.openai import OpenAIClient
+
+
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 
 # =========================
