@@ -5,20 +5,16 @@ from typing import List, Tuple, Optional
 import numpy as np
 import pandas as pd
 
-import plotly.express as px
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
-
-
 from datapizza.agents import Agent
 from datapizza.clients.openai import OpenAIClient
-
 
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn.metrics.pairwise import cosine_similarity
 
-
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
 
 # =========================
 # OpenAI client setup
@@ -327,7 +323,7 @@ def show_top_k(
 # LLM answer generation
 # =========================
 
-def baskin_gpt_core(
+def Quidditch_gpt_core(
     query: str,
     frasi: List[str],
     embeddings: np.ndarray,
@@ -396,7 +392,7 @@ def baskin_gpt_core(
     context = "\n".join([r[0] for r in retrieved])
 
     prompt = (
-        "Sei un esperto di Baskin. Rispondi in modo chiaro e preciso, "
+        "Sei un esperto di Quidditch. Rispondi in modo chiaro e preciso, "
         "usando solo le informazioni fornite nel contesto. "
         "Se il contesto non contiene la risposta, dillo esplicitamente.\n\n"
         f"Contesto:\n{context}\n\n"
