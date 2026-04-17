@@ -1,0 +1,262 @@
+[
+  {
+    "sentence": "Per tutto quanto non definito nel seguente Regolamento di gioco si fa riferimento alle regole generali del Quidditch qui descritte e, in caso di dubbi interpretativi, prevale il principio della sicurezza dei giocatori e della regolarità del gioco.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il Quidditch è uno sport disputato tra due squadre composte da sette giocatori ciascuna.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni squadra schiera tre Cacciatori, due Battitori, un Portiere e un Cercatore.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il campo di gioco ha forma ovale ed è dotato, a ciascuna estremità, di tre anelli posti ad altezze differenti.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Gli anelli costituiscono le porte valide per la realizzazione dei punti mediante la Pluffa.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La partita si svolge utilizzando quattro palle: una Pluffa, due Bolidi e un Boccino d’Oro.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La Pluffa è la palla utilizzata dai Cacciatori e dal Portiere per sviluppare il gioco offensivo e difensivo principale.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "I Bolidi sono palle aggressive il cui scopo è ostacolare i giocatori in campo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il Boccino d’Oro è una piccola sfera volante estremamente rapida che può essere catturata soltanto dai Cercatori.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni giocatore deve disputare l’incontro restando in sella alla propria scopa.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La perdita volontaria o involontaria del contatto con la scopa comporta l’immediata uscita temporanea dall’azione di gioco.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il giocatore che perde la scopa deve interrompere la propria azione, rimontare correttamente e rientrare nel gioco solo dopo aver ristabilito il possesso regolare della scopa.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La partita inizia con tutte le palle collocate in posizione neutra e con i giocatori schierati nelle rispettive metà campo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Al segnale di inizio, i giocatori possono muoversi verso il centro del campo per contendersi la Pluffa e prendere posizione rispetto ai Bolidi.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "I Cacciatori possono passarsi la Pluffa tra compagni e tentare di segnare facendo transitare la palla in uno degli anelli avversari.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni rete valida realizzata con la Pluffa assegna 10 punti alla squadra attaccante.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Una rete è valida quando la Pluffa attraversa completamente uno degli anelli avversari senza che vi sia stata infrazione nell’azione immediatamente precedente.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Dopo ogni rete subita, il Portiere o un Cacciatore della squadra che ha subito il punto rimette rapidamente la Pluffa in gioco dalla propria zona difensiva.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il Portiere difende gli anelli della propria squadra e può contrastare i tentativi di segnatura degli avversari.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il Portiere può partecipare alla circolazione della Pluffa come gli altri giocatori, fermo restando il suo ruolo primario di difesa delle porte.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "I Battitori utilizzano mazze regolamentari per colpire i Bolidi e indirizzarli contro i giocatori avversari.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Un giocatore colpito validamente da un Bolide è considerato temporaneamente fuori azione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il giocatore colpito da un Bolide deve lasciare ogni eventuale palla in suo possesso, interrompere l’azione in corso e rientrare in gioco solo dopo aver toccato il proprio punto di rientro.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il punto di rientro è identificato in prossimità degli anelli difesi dalla squadra del giocatore colpito.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "I Cacciatori e il Portiere non possono utilizzare le mani o altre parti del corpo per deviare intenzionalmente i Bolidi, salvo il normale impatto accidentale previsto dal gioco.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Solo i Battitori possono controllare attivamente la traiettoria dei Bolidi mediante la mazza.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "I Cercatori possono entrare in azione non appena il Boccino d’Oro viene dichiarato attivo dall’arbitro.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Fino all’attivazione del Boccino, i Cercatori non possono interferire con il gioco della Pluffa né con l’azione dei Battitori.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Dal momento dell’attivazione del Boccino, i Cercatori possono inseguirlo in qualunque zona consentita del campo di gioco.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La cattura valida del Boccino d’Oro assegna 150 punti alla squadra del Cercatore che lo afferra.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La cattura del Boccino determina immediatamente la conclusione della partita.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "È valida soltanto la cattura effettuata con presa chiara e controllo evidente del Boccino da parte del Cercatore.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Se il Boccino sfugge immediatamente dalla presa o non vi è controllo sufficiente, il gioco prosegue senza assegnazione di punti.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Le sostituzioni sono consentite solo a gioco fermo e con autorizzazione arbitrale.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni sostituzione deve avvenire nell’apposita area e il giocatore entrante non può entrare in campo prima che il compagno sostituito ne sia uscito.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Una squadra che si presenta con meno di sette giocatori può iniziare la partita soltanto se raggiunge il numero minimo stabilito dagli organizzatori della competizione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Se una squadra resta con un numero insufficiente di giocatori per proseguire, la partita viene interrotta e assegnata secondo le norme della competizione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il contatto fisico è ammesso solo entro i limiti del contrasto regolare e proporzionato.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Sono vietati i colpi al volto, al collo, alla nuca e in generale ogni contatto pericoloso o antisportivo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "È vietato trattenere un avversario con mani, braccia, gambe, scopa o equipaggiamento.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "È vietato spingere un avversario fuori traiettoria in modo violento o senza possibilità di contendere regolarmente la palla.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "È vietato ostacolare deliberatamente un Cercatore che non sia coinvolto in un’azione regolare di inseguimento del Boccino.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "L’arbitro può sanzionare ogni comportamento ritenuto pericoloso, sleale o contrario allo spirito del gioco.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Le infrazioni minori sono punite con assegnazione del possesso della Pluffa alla squadra avversaria.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Le infrazioni gravi possono essere punite con un tiro di rigore, con espulsione temporanea o con espulsione definitiva, secondo la loro gravità.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il tiro di rigore viene eseguito da un Cacciatore contro il solo Portiere avversario.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Durante il tiro di rigore, gli altri giocatori devono restare fuori dall’azione fino alla conclusione del tentativo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Se il tiro di rigore si conclude con una rete valida, vengono assegnati 10 punti.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Se il tiro di rigore non si conclude con una rete valida, il gioco riprende secondo decisione arbitrale e con palla viva.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Un giocatore ammonito per comportamento antisportivo deve modificare immediatamente la propria condotta.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La reiterazione di condotte antisportive può comportare l’espulsione temporanea dal campo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "L’espulsione definitiva comporta l’impossibilità per il giocatore di rientrare nell’incontro in corso.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La squadra del giocatore espulso definitivamente prosegue l’incontro in inferiorità numerica, salvo diversa disposizione della competizione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Il tempo di gioco può essere continuato o interrotto a discrezione degli organizzatori e del regolamento specifico della manifestazione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "In assenza di una durata prefissata, la partita prosegue fino alla cattura del Boccino d’Oro.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "In presenza di una durata prefissata, allo scadere del tempo regolamentare l’incontro termina e vince la squadra con il punteggio più alto, salvo supplementari previsti dal torneo.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "In caso di parità, la competizione può prevedere tempi supplementari o una procedura speciale di spareggio.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni squadra può richiedere un time-out solo se tale possibilità è prevista dal regolamento della manifestazione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Durante il time-out il gioco è sospeso e i giocatori devono attenersi alle indicazioni arbitrali.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Le decisioni arbitrali sul gioco, sulle reti, sulle catture del Boccino e sulle infrazioni sono definitive, salvo eventuali procedure di reclamo previste dalla competizione.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Gli arbitri hanno facoltà di sospendere temporaneamente l’incontro in caso di condizioni atmosferiche pericolose, invasione del campo o situazioni che mettano a rischio l’incolumità dei partecipanti.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "L’equipaggiamento dei giocatori deve essere sicuro, privo di elementi taglienti o pericolosi e coerente con i colori della propria squadra.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni giocatore deve essere chiaramente identificabile per numero, ruolo o altro sistema stabilito dagli organizzatori.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "Ogni comportamento volto a ritardare intenzionalmente la ripresa del gioco può essere sanzionato come condotta antisportiva.",
+    "categoria": "Quidditch"
+  },
+  {
+    "sentence": "La squadra vincente è quella che, alla conclusione regolare dell’incontro, ha ottenuto il punteggio più alto.",
+    "categoria": "Quidditch"
+  }
+]
