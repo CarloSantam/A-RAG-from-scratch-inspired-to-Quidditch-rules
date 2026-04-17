@@ -1,6 +1,6 @@
-# A-RAG-from-scratch-inspired-to-Baskin-rules
+# A-RAG-from-scratch-inspired-to-Quidditch-rules
 
-A Retrieval-Augmented Generation (RAG) project built from scratch, inspired by Baskin rules.
+A Retrieval-Augmented Generation (RAG) project built from scratch, inspired by Quidditch rules.
 
 The application is developed using **Streamlit** and provides a simple web interface to query the RAG system.
 
@@ -16,8 +16,8 @@ The application is developed using **Streamlit** and provides a simple web inter
 ## Clone the repository
 
 ```bash
-git clone https://github.com/CarloSantam/A-RAG-from-scratch-inspired-to-Baskin-rules.git
-cd A-RAG-from-scratch-inspired-to-Baskin-rules
+git clone https://github.com/CarloSantam/A-RAG-from-scratch-inspired-to-Quidditch-rules.git
+cd A-RAG-from-scratch-inspired-to-Quidditch-rules
 
 ## Create a Conda environment
 
