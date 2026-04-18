@@ -60,7 +60,7 @@ def load_data_and_emb(pwd=''):
     return frasi, embeddings
 
 
-frasi, embeddings = load_data_and_emb()
+frasi, embeddings = load_data_and_emb(pwd)
 
 
 # =========================
