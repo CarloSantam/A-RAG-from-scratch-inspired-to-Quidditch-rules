@@ -8,6 +8,7 @@ import uuid
 # Page configuration
 # =========================
 
+model="text-embedding-3-small"
 
 st.set_page_config(
     page_title="A Rag Inspired to Quidditch",
