@@ -28,7 +28,7 @@ def load_data_and_emb(pwd=''):
     Load the knowledge base and its embeddings.
     If embeddings are not found, compute and save them.
     """
-    json_path = "Quidditch_regolamento.json"
+    json_path = "quidditch_regolamento.json"
     emb_path = "embeddings_db"
 
     # Check that the JSON file exists
