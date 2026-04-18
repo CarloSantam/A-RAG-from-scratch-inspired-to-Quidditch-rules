@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 from typing import List, Tuple, Optional
 
@@ -15,6 +14,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+
+from openai import OpenAI
 
 # =========================
 # OpenAI client setup
@@ -35,7 +36,7 @@ def _ensure_2d_array(x: np.ndarray) -> np.ndarray:
     return x
 
 
-def index_database(frasi: List[str], path: str, model) -> np.ndarray:
+def index_database(frasi: List[str], path: str, model,pwd:str) -> np.ndarray:
     """
     Compute embeddings for a list of sentences and save them to disk.
 
@@ -52,16 +53,33 @@ def index_database(frasi: List[str], path: str, model) -> np.ndarray:
 
     # Extract text items only
     texts = [str(f) for f in frasi]
+    
+    client=OpenAI(pwd)
 
-    # Generate embeddings
-    embeddings = model.encode(texts)
-    embeddings = _ensure_2d_array(np.asarray(embeddings))
+    # # Generate embeddings
+    # embeddings = model.encode(texts)
+    # embeddings = _ensure_2d_array(np.asarray(embeddings))
 
-    # Ensure target directory exists
+    # # Ensure target directory exists
+    # save_path = Path(path).with_suffix(".npy")
+    # save_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # # Save embeddings
+    # np.save(save_path, embeddings)
+    
+    response=client.embeddigs.create(model="text-embedding-3-small",  # oppure "text-embedding-3-large"
+        input=texts
+    )
+    
+    embeddings = np.array([item.embedding for item in response.data])
+    
+    # Ensure 2D
+    if embeddings.ndim == 1:
+        embeddings = embeddings.reshape(1, -1)
+    
+    # Save
     save_path = Path(path).with_suffix(".npy")
     save_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Save embeddings
     np.save(save_path, embeddings)
 
     return embeddings
