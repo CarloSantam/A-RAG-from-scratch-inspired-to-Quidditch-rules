@@ -9,11 +9,14 @@ import uuid
 # Page configuration
 # =========================
 
+
 st.set_page_config(
     page_title="A Rag Inspired to Quidditch",
     page_icon="🧹",
     layout="centered"
 )
+
+pwd = st.text_input("Inserisci la tua OPEN AI KEY:",type="password")
 
 
 # =========================
@@ -36,12 +39,12 @@ model = load_model()
 # =========================
 
 @st.cache_resource
-def load_data_and_emb():
+def load_data_and_emb(pwd=''):
     """
     Load the knowledge base and its embeddings.
     If embeddings are not found, compute and save them.
     """
-    json_path = "quidditch_regolamento.json"
+    json_path = "Quidditch_regolamento.json"
     emb_path = "embeddings_db"
 
     # Check that the JSON file exists
@@ -68,7 +71,7 @@ def load_data_and_emb():
     if os.path.exists(f"{emb_path}.npy"):
         embeddings = load_emb(emb_path)
     else:
-        embeddings = index_database(frasi, emb_path, model)
+        embeddings = index_database(frasi, emb_path, model,pwd)
 
     return frasi, embeddings
 
@@ -95,11 +98,6 @@ st.write(
     "Questa web app è **non ufficiale** ed è solo un esperimento dell'autore. "
 )
 
-pwd = st.text_input("Inserisci la tua OPEN AI KEY:",type="password")
-
-if pwd==False:
-    
-    st.warning("Attenzione: inserisci la password.")
 
 if pwd:
     
