@@ -54,7 +54,7 @@ def index_database(frasi: List[str], path: str, model,pwd:str) -> np.ndarray:
     # Extract text items only
     texts = [str(f) for f in frasi]
     
-    client=OpenAI(pwd)
+    client=OpenAI(api_key=pwd)
 
     # # Generate embeddings
     # embeddings = model.encode(texts)
