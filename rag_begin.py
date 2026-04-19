@@ -157,3 +157,126 @@ def Quidditch_gpt_core(
     answer = result.text
 
     return answer, context, retrieved, query_emb,embeddings
+
+
+# =========================
+# Visualization utilities
+# =========================
+
+def viz(query_emb, embeddings, query: str, frasi: List[str]) -> None:
+    """
+    Visualize sentence embeddings and the query in 2D using PCA and t-SNE.
+
+    Args:
+        query_emb: Query embedding, shape (1, d) or (d,).
+        embeddings: Corpus embeddings, shape (n, d).
+        query: Input query string.
+        frasi: List of corpus sentences.
+    """
+    embeddings = _ensure_2d_array(np.asarray(embeddings))
+    query_emb = _ensure_2d_array(np.asarray(query_emb))
+
+    if embeddings.shape[0] != len(frasi):
+        raise ValueError(
+            f"Mismatch between embeddings ({embeddings.shape[0]}) and sentences ({len(frasi)})."
+        )
+
+    if query_emb.shape[1] != embeddings.shape[1]:
+        raise ValueError(
+            f"Embedding dimension mismatch: query={query_emb.shape[1]}, "
+            f"database={embeddings.shape[1]}."
+        )
+
+    # Combine corpus embeddings and query embedding
+    all_vecs = np.vstack([embeddings, query_emb])
+
+    # PCA projection
+    pca = PCA(n_components=2)
+    pca_vecs = pca.fit_transform(all_vecs)
+
+    # t-SNE projection
+    # Perplexity must be smaller than the number of samples
+    n_samples = all_vecs.shape[0]
+    perplexity = max(1, min(5, n_samples - 1))
+
+    tsne = TSNE(
+        n_components=2,
+        random_state=42,
+        perplexity=perplexity,
+        init="pca",
+        learning_rate="auto"
+    )
+    tsne_vecs = tsne.fit_transform(all_vecs)
+
+    # Create a figure with two subplots
+    fig = make_subplots(rows=1, cols=2, subplot_titles=("PCA", "t-SNE"))
+
+    # PCA plot for dataset points
+    fig.add_trace(
+        go.Scatter(
+            x=pca_vecs[:-1, 0],
+            y=pca_vecs[:-1, 1],
+            mode="markers+text",
+            text=frasi,
+            textposition="top center",
+            marker=dict(color="blue", size=8),
+            name="Sentences"
+        ),
+        row=1,
+        col=1
+    )
+
+    # PCA plot for query point
+    fig.add_trace(
+        go.Scatter(
+            x=[pca_vecs[-1, 0]],
+            y=[pca_vecs[-1, 1]],
+            mode="markers+text",
+            text=[query],
+            textposition="top center",
+            marker=dict(color="red", size=10, symbol="diamond"),
+            name="Query"
+        ),
+        row=1,
+        col=1
+    )
+
+    # t-SNE plot for dataset points
+    fig.add_trace(
+        go.Scatter(
+            x=tsne_vecs[:-1, 0],
+            y=tsne_vecs[:-1, 1],
+            mode="markers+text",
+            text=frasi,
+            textposition="top center",
+            marker=dict(color="green", size=8),
+            name="Sentences"
+        ),
+        row=1,
+        col=2
+    )
+
+    # t-SNE plot for query point
+    fig.add_trace(
+        go.Scatter(
+            x=[tsne_vecs[-1, 0]],
+            y=[tsne_vecs[-1, 1]],
+            mode="markers+text",
+            text=[query],
+            textposition="top center",
+            marker=dict(color="red", size=10, symbol="diamond"),
+            name="Query"
+        ),
+        row=1,
+        col=2
+    )
+
+    fig.update_layout(
+        title="Sentence Embeddings: PCA vs t-SNE",
+        showlegend=False,
+        height=700,
+        width=1400
+    )
+
+    return fig
+
