@@ -135,7 +135,7 @@ def Quidditch_gpt_core(
     
     texts = [str(f) for f in retrieved]    
     
-    embeddings_retr= get_openai_embeddings(texts,model,pwd)
+    embeddings_retr= get_openai_embeddings(texts,model_emb,pwd)
     
     context = "\n".join([r[0] for r in retrieved])
 
